@@ -13,12 +13,12 @@ name_to_good_movies_table = {
     "Linda": "Spider-Man",
     "Lotus": "Fight Club",
 }
-def filter_names(characters):
+def save_names_to_csv_file():
     with open("table.csv", mode="w") as excel_file:
         for name, movie in name_to_good_movies_table.items():
             excel_file.write(name+";"+movie+"\n")
         
 
-filter_names(["A", "B", "C", "D", "E", "J"])
+save_names_to_csv_file()
 
 
